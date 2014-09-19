@@ -1,59 +1,34 @@
 package es.upm.miw.pd.cohesion.v0;
 
 public class Point {
-    private int x, y;
-
-    private double angle;
-
     public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
     }
 
     public Point() {
-        this.x = 0;
-        this.y = 0;
-    }
-
-    public Point(double angle) {
-        this.angle = angle;
     }
 
     public int getX() {
-        return this.x;
+        return 0;
     }
 
     public int getY() {
-        return this.y;
-    }
-
-    public double getAngle() {
-        return angle;
+        return 0;
     }
 
     public double module() {
-        return Math.sqrt(this.x * this.x + this.y * this.y);
+        return 0;
     }
 
-    public double module(int x, int y) {
-        return Math.sqrt(x * x + y * y);
+    public double phase() {
+        return 0;
     }
 
-    public int mayor(int x, int y) {
-        if (x > y) {
-            return x;
-        } else {
-            return y;
-        }
-    }
-
-    public void addAngle(double angle) {
-        this.angle += angle;
+    public void translateOrigin(Point origin) {
     }
 
     @Override
     public String toString() {
-        return "Point[" + x + "," + y + "]";
+        return super.toString();
     }
 
 }
