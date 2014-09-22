@@ -1,5 +1,6 @@
 package es.upm.miw.pd.doo;
 
+//No cumple el: Single Responsibility Principle
 public class Mathematics {
     private int x, y, z;
 
