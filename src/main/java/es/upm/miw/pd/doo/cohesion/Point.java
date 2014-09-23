@@ -1,4 +1,4 @@
-package es.upm.miw.pd.cohesion;
+package es.upm.miw.pd.doo.cohesion;
 
 public class Point {
     private int x, y;

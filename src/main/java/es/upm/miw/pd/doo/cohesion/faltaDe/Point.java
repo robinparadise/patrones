@@ -1,4 +1,4 @@
-package es.upm.miw.pd.cohesion.v1;
+package es.upm.miw.pd.doo.cohesion.faltaDe;
 
 public class Point {
     private int x, y;

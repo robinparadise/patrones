@@ -1,4 +1,4 @@
-package es.upm.miw.pd.cohesion;
+package es.upm.miw.pd.doo.cohesion;
 
 import java.util.ArrayList;
 import java.util.List;

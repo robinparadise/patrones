@@ -1,4 +1,4 @@
-package es.upm.miw.pd.cohesion.v0;
+package es.upm.miw.pd.doo.encapsulacion;
 
 public class Point {
     public Point(int x, int y) {
