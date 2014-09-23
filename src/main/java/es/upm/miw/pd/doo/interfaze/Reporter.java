@@ -1,4 +1,4 @@
-package es.upm.miw.pd.reporter;
+package es.upm.miw.pd.doo.interfaze;
 
 import java.util.ArrayList;
 import java.util.List;
