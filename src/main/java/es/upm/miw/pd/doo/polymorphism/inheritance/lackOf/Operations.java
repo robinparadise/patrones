@@ -1,4 +1,4 @@
-package es.upm.miw.pd.doo.polymorphims.inheritance.lackOf;
+package es.upm.miw.pd.doo.polymorphism.inheritance.lackOf;
 
 public class Operations {
     private Object[] operators = new Object[10];

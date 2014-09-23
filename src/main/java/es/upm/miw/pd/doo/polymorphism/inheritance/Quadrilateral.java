@@ -1,7 +1,8 @@
-package es.upm.miw.pd.doo.polymorphims.inheritance;
+package es.upm.miw.pd.doo.polymorphism.inheritance;
 
-public class Triangle extends Figure {
-    public Triangle(String description, int base, int height) {
+public class Quadrilateral extends Figure {
+
+    public Quadrilateral(String description, int lado) {
         super(description);
     }
 

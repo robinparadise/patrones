@@ -1,4 +1,4 @@
-package es.upm.miw.pd.doo.polymorphims.inheritance;
+package es.upm.miw.pd.doo.polymorphism.inheritance;
 
 public abstract class Figure {
 

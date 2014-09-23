@@ -1,6 +1,6 @@
 package es.upm.miw.pd.doo.interfaze;
 
-import es.upm.miw.pd.doo.polymorphims.interfaze.Receptor;
+import es.upm.miw.pd.doo.polymorphism.interfaze.Receptor;
 
 
 public class ReceptorMock implements Receptor {
