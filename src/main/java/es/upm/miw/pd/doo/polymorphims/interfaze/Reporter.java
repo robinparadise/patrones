@@ -1,4 +1,4 @@
-package es.upm.miw.pd.doo.interfaze;
+package es.upm.miw.pd.doo.polymorphims.interfaze;
 
 import java.util.ArrayList;
 import java.util.List;

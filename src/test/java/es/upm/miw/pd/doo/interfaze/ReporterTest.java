@@ -5,6 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import es.upm.miw.pd.doo.polymorphims.interfaze.Reporter;
+
 public class ReporterTest {
     private Reporter reporter;
 

@@ -1,4 +1,4 @@
-package es.upm.miw.pd.doo.polymorphism.lackOf;
+package es.upm.miw.pd.doo.polymorphims.inheritance.lackOf;
 
 public class Main {
 
