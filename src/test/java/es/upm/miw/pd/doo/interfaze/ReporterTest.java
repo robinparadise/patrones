@@ -1,11 +1,9 @@
-package es.upm.miw.pd.reporter;
+package es.upm.miw.pd.doo.interfaze;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import es.upm.miw.pd.doo.interfaze.Reporter;
 
 public class ReporterTest {
     private Reporter reporter;
