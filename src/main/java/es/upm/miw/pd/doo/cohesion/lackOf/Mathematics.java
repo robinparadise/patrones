@@ -1,4 +1,4 @@
-package es.upm.miw.pd.doo.cohesion.faltaDe;
+package es.upm.miw.pd.doo.cohesion.lackOf;
 
 //No cumple el: Single Responsibility Principle
 public class Mathematics {

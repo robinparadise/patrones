@@ -1,4 +1,4 @@
-package es.upm.miw.pd.doo.encapsulacion;
+package es.upm.miw.pd.doo.encapsulation;
 
 public class Point {
     public Point(int x, int y) {

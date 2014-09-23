@@ -1,4 +1,4 @@
-package es.upm.miw.pd.relations;
+package es.upm.miw.pd.doo.polymorphism.lackOf;
 
 public class Addition {
     private final int operator1, operator2;
