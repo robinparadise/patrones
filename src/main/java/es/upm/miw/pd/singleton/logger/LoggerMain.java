@@ -1,18 +1,13 @@
 package es.upm.miw.pd.singleton.logger;
 
 public class LoggerMain {
-    public void prueba() {
-        Logger.getLogger().addLog("Uno");
-        Logger.getLogger().addLog("Dos");
-        Logger.getLogger().addLog("Tres");
-        Logger.getLogger().print();
-        Logger.getLogger().clear();
-        Logger.getLogger().addLog("Cuatro");
-        Logger.getLogger().print();
-    }
 
     public static void main(String[] args) {
-        new LoggerMain().prueba();
+        Logger logger = new Logger();
+        new Clase1().method1(logger);
+        Clase2 c2 = new Clase2(logger);
+        c2.method1();
+        c2.method2();
     }
 
 }

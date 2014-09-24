@@ -3,16 +3,10 @@ package es.upm.miw.pd.singleton.logger;
 import java.util.Date;
 
 public final class Logger {
-    private static final Logger LOGGER = new Logger();
-
     private String logs;
 
-    private Logger() {
+    public Logger() {
         this.clear();
-    }
-
-    public static Logger getLogger() {
-        return LOGGER;
     }
 
     public String getLogs() {

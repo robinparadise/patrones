@@ -5,6 +5,8 @@ import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
 
+import es.upm.miw.pd.singleton.logger.solution.Logger;
+
 public class LoggerTest {
     @Test
     public void testIsSingleton() {
