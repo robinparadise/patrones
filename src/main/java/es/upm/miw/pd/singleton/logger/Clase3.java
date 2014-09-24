@@ -9,7 +9,7 @@ public class Clase3 {
 
     public void method1() {
         // ...
-        this.logger.addLog("Registrado");
+        this.logger.addLog("Clase3:method1");
     }
 
 }

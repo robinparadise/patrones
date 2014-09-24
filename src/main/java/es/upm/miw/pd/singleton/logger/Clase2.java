@@ -6,18 +6,17 @@ public class Clase2 {
     public Clase2(Logger logger) {
         this.logger = logger;
     }
-    
-    public void method1(){
-        //...
-        this.logger.addLog("Registrado");
+
+    public void method1() {
+        // ...
+        this.logger.addLog("Clase2:method1");
     }
-    
-    public void method2(){
-        //...
-        Clase3 c3= new Clase3(this.logger);
+
+    public void method2() {
+        // ...
+        Clase3 c3 = new Clase3(this.logger);
         c3.method1();
-        this.logger.addLog("Registrado");
+        this.logger.addLog("Clase2:method2");
     }
-    
 
 }
