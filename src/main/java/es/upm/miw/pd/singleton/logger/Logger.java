@@ -20,8 +20,4 @@ public final class Logger {
     public void clear() {
         this.logs = new Date().toString() + "\n";
     }
-
-    public void print() {
-        System.out.print(this.logs);
-    }
 }
