@@ -1,12 +1,18 @@
-package es.upm.miw.pd.singleton.logger;
+package es.upm.miw.pd.singleton.logger.solution;
 
 import java.util.Date;
 
-public final class Logger{
+public final class Logger {
+    private static final Logger LOGGER = new Logger();
+
     private String logs;
 
-    public Logger() {
+    private Logger() {
         this.clear();
+    }
+
+    public static Logger getLogger() {
+        return LOGGER;
     }
 
     public String getLogs() {
@@ -19,5 +25,9 @@ public final class Logger{
 
     public void clear() {
         this.logs = new Date().toString() + "\n";
+    }
+
+    public void print() {
+        System.out.print(this.logs);
     }
 }
