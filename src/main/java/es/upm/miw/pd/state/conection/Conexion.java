@@ -5,16 +5,14 @@ public class Conexion {
 
     private Link link;
 
-    public Conexion() {
+    public Conexion(Link link) {
+        assert link != null;
+        this.link = link;
         this.estado = Estado.CERRADO;
     }
 
     public Link getLink() {
         return link;
-    }
-
-    public void setLink(Link emisor) {
-        this.link = emisor;
     }
 
     public Estado estado() {

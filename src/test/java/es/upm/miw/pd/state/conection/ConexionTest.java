@@ -16,10 +16,8 @@ public class ConexionTest {
 
     @Before
     public void ini() {
-        this.conexion = new Conexion();
         this.link = new LinkMock();
-        // Se inyecta el emisor en la conexion
-        this.conexion.setLink(link);
+        this.conexion = new Conexion(this.link);
     }
 
     @Test
