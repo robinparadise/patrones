@@ -1,4 +1,4 @@
-package es.upm.miw.pd.composite.numberTree;
+package es.upm.miw.pd.composite.treeNumbers;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import es.upm.miw.pd.composite.treeNumbers.TreeNumbers;
 
-public class NodoTest {
+public class TreeNumbersTest {
     private TreeNumbers root;
 
     private TreeNumbers sub1;
