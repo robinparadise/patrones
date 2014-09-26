@@ -1,19 +1,22 @@
-package es.upm.miw.pd.state;
+package es.upm.miw.pd.state.conection;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import es.upm.miw.pd.state.conection.Conection;
+import es.upm.miw.pd.state.conection.State;
+import es.upm.miw.pd.state.conection.Link;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-public class ConexionTest {
-    private Conexion conexion;
+public class ConectionTest {
+    private Conection conexion;
 
     private LinkMock link;
 
     @Before
     public void ini() {
-        this.conexion = new Conexion();
+        this.conexion = new Conection();
         this.link = new LinkMock();
         // Se inyecta el emisor en la conexion
         this.conexion.setEmisor(link);
@@ -21,19 +24,19 @@ public class ConexionTest {
 
     @Test
     public void testEstadoInicial() {
-        assertEquals(Estado.CERRADO, this.conexion.estado());
+        assertEquals(State.CERRADO, this.conexion.estado());
     }
 
     @Test
     public void testCerradoAbrir() {
         this.conexion.abrir();
-        assertEquals(Estado.PREPARADO, this.conexion.estado());
+        assertEquals(State.PREPARADO, this.conexion.estado());
     }
 
     @Test
     public void testCerradoCerrar() {
         this.conexion.cerrar();
-        assertEquals(Estado.CERRADO, this.conexion.estado());
+        assertEquals(State.CERRADO, this.conexion.estado());
     }
 
     @Test
@@ -80,35 +83,35 @@ public class ConexionTest {
     public void testPreparadoAbrir() {
         this.conexion.abrir();
         this.conexion.abrir();
-        assertEquals(Estado.PREPARADO, this.conexion.estado());
+        assertEquals(State.PREPARADO, this.conexion.estado());
     }
 
     @Test
     public void testPreparadoCerrar() {
         this.conexion.abrir();
         this.conexion.cerrar();
-        assertEquals(Estado.CERRADO, this.conexion.estado());
+        assertEquals(State.CERRADO, this.conexion.estado());
     }
 
     @Test
     public void testPreparadoParar() {
         this.conexion.abrir();
         this.conexion.parar();
-        assertEquals(Estado.PARADO, this.conexion.estado());
+        assertEquals(State.PARADO, this.conexion.estado());
     }
 
     @Test
     public void testPreparadoIniciar() {
         this.conexion.abrir();
         this.conexion.iniciar();
-        assertEquals(Estado.PREPARADO, this.conexion.estado());
+        assertEquals(State.PREPARADO, this.conexion.estado());
     }
 
     @Test
     public void testPreparadoEnviar() {
         this.conexion.abrir();
         this.conexion.enviar("...");
-        assertEquals(Estado.ESPERANDO, this.conexion.estado());
+        assertEquals(State.ESPERANDO, this.conexion.estado());
         assertEquals("...", link.getMsg());
     }
 
@@ -152,7 +155,7 @@ public class ConexionTest {
         this.conexion.abrir();
         this.conexion.parar();
         this.conexion.parar();
-        assertEquals(Estado.PARADO, this.conexion.estado());
+        assertEquals(State.PARADO, this.conexion.estado());
     }
 
     @Test
@@ -160,7 +163,7 @@ public class ConexionTest {
         this.conexion.abrir();
         this.conexion.parar();
         this.conexion.iniciar();
-        assertEquals(Estado.PREPARADO, this.conexion.estado());
+        assertEquals(State.PREPARADO, this.conexion.estado());
     }
 
     @Test
@@ -252,7 +255,7 @@ public class ConexionTest {
         this.conexion.abrir();
         this.conexion.enviar("...");
         this.conexion.recibir(Link.ACK);
-        assertEquals(Estado.PREPARADO, this.conexion.estado());
+        assertEquals(State.PREPARADO, this.conexion.estado());
     }
 
     @Test
@@ -260,7 +263,7 @@ public class ConexionTest {
         this.conexion.abrir();
         this.conexion.enviar("...");
         this.conexion.recibir(1);
-        assertEquals(Estado.CERRADO, this.conexion.estado());
+        assertEquals(State.CERRADO, this.conexion.estado());
     }
 
 
