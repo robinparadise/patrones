@@ -6,38 +6,40 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
+import es.upm.miw.pd.composite.treeNumbers.TreeNumbers;
+
 public class NodoTest {
-    private NumberTree root;
+    private TreeNumbers root;
 
-    private NumberTree sub1;
+    private TreeNumbers sub1;
 
-    private NumberTree sub11;
+    private TreeNumbers sub11;
 
-    private NumberTree sub12;
+    private TreeNumbers sub12;
 
-    private NumberTree leaf;
+    private TreeNumbers leaf;
 
     @Before
     public void ini() {
-        this.root = new NumberTree("raiz");
+        this.root = new TreeNumbers("raiz");
 
-        this.leaf = new NumberTree(1);
+        this.leaf = new TreeNumbers(1);
         this.root.add(leaf);
-        this.sub1 = new NumberTree("sub1");
+        this.sub1 = new TreeNumbers("sub1");
         this.root.add(sub1);
-        this.root.add(new NumberTree(7));
+        this.root.add(new TreeNumbers(7));
 
-        this.sub11 = new NumberTree("sub11");
+        this.sub11 = new TreeNumbers("sub11");
         this.sub1.add(sub11);
-        this.sub1.add(new NumberTree(4));
-        this.sub12 = new NumberTree("sub12");
+        this.sub1.add(new TreeNumbers(4));
+        this.sub12 = new TreeNumbers("sub12");
         this.sub1.add(sub12);
 
-        this.sub11.add(new NumberTree(2));
-        this.sub11.add(new NumberTree(3));
+        this.sub11.add(new TreeNumbers(2));
+        this.sub11.add(new TreeNumbers(3));
 
-        this.sub12.add(new NumberTree(5));
-        this.sub12.add(new NumberTree(6));
+        this.sub12.add(new TreeNumbers(5));
+        this.sub12.add(new TreeNumbers(6));
     }
 
     @Test
@@ -85,7 +87,7 @@ public class NodoTest {
     @Test
     public void testAddLeaf() {
          try {
-            this.leaf.add(new NumberTree(2));
+            this.leaf.add(new TreeNumbers(2));
             fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
