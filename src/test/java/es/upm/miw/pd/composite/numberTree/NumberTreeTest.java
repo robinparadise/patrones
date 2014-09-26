@@ -6,7 +6,7 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
-public class NodoTest {
+public class NumberTreeTest {
     private NumberTree root;
 
     private NumberTree sub1;
