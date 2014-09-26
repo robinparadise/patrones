@@ -3,18 +3,18 @@ package es.upm.miw.pd.state.conection;
 public class Conexion {
     private Estado estado;
 
-    private Link emisor;
+    private Link link;
 
     public Conexion() {
         this.estado = Estado.CERRADO;
     }
 
-    public Link getEmisor() {
-        return emisor;
+    public Link getLink() {
+        return link;
     }
 
-    public void setEmisor(Link emisor) {
-        this.emisor = emisor;
+    public void setLink(Link emisor) {
+        this.link = emisor;
     }
 
     public Estado estado() {
@@ -75,7 +75,7 @@ public class Conexion {
         } else if (this.estado == Estado.PARADO) {
             throw new UnsupportedOperationException("Acción no permitida... ");
         } else if (this.estado == Estado.PREPARADO) {
-            this.emisor.enviar(msg);
+            this.link.enviar(msg);
             this.estado = Estado.ESPERANDO;
         } else if (this.estado == Estado.ESPERANDO) {
             throw new UnsupportedOperationException("Acción no permitida... ");

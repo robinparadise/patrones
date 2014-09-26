@@ -19,7 +19,7 @@ public class ConexionTest {
         this.conexion = new Conexion();
         this.link = new LinkMock();
         // Se inyecta el emisor en la conexion
-        this.conexion.setEmisor(link);
+        this.conexion.setLink(link);
     }
 
     @Test
