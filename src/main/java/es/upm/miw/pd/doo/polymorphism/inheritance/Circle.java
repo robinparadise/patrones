@@ -1,24 +1,22 @@
 package es.upm.miw.pd.doo.polymorphism.inheritance;
 
-public class Quadrilateral extends Figure {
+public class Circle extends Figure {
 
-    public Quadrilateral(String description, int lado) {
+    public Circle(String description) {
         super(description);
+        // TODO Auto-generated constructor stub
     }
 
     @Override
     public double area() {
+        // TODO Auto-generated method stub
         return 0;
     }
 
     @Override
     public double numberOfSides() {
+        // TODO Auto-generated method stub
         return 0;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
     }
 
 }
