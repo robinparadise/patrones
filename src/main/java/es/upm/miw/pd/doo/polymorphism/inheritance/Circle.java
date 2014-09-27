@@ -2,7 +2,7 @@ package es.upm.miw.pd.doo.polymorphism.inheritance;
 
 public class Circle extends Figure {
 
-    public Circle(String description) {
+    public Circle(String description, int radius) {
         super(description);
         // TODO Auto-generated constructor stub
     }
