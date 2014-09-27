@@ -12,7 +12,7 @@ public class FactoryMethodMain {
     }
 
     public void crearProducto() {
-        IO.out.println("Creado producto: " + this.creador.crearProducto().view());
+        IO.out.println("Creado producto: " + this.creador.crearProducto().toString());
     }
 
     public static void main(String[] args) {
