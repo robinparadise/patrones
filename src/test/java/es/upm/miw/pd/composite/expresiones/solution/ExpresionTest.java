@@ -10,47 +10,47 @@ public class ExpresionTest {
 
     @Before
     public void ini() {
-        exp1 = new Numero(4);
-        exp2 = new Sumar(exp1, new Numero(2));
-        exp3 = new Restar(exp1, new Numero(3));
-        exp4 = new Multiplicar(exp1, new Numero(2));
-        exp5 = new Dividir(exp1, new Numero(3));
-        exp6 = new Sumar(new Restar(new Numero(3), new Multiplicar(
-                new Dividir(exp1, new Numero(2)), new Numero(3))), exp1); // ((3-((4/2)*3))+4)
+        this.exp1 = new Numero(4);
+        this.exp2 = new Sumar(this.exp1, new Numero(2));
+        this.exp3 = new Restar(this.exp1, new Numero(3));
+        this.exp4 = new Multiplicar(this.exp1, new Numero(2));
+        this.exp5 = new Dividir(this.exp1, new Numero(3));
+        this.exp6 = new Sumar(new Restar(new Numero(3), new Multiplicar(
+                new Dividir(this.exp1, new Numero(2)), new Numero(3))), this.exp1); // ((3-((4/2)*3))+4)
     }
 
     @Test
     public void testValor() {
-        assertEquals(4, exp1.operar());
+        assertEquals(4, this.exp1.operar());
     }
 
     @Test
     public void TestSuma() {
-        assertEquals(6, exp2.operar());
+        assertEquals(6, this.exp2.operar());
     }
 
     @Test
     public void testResta() {
-        assertEquals(1, exp3.operar());
+        assertEquals(1, this.exp3.operar());
     }
 
     @Test
     public void testMultiplicacion() {
-        assertEquals(8, exp4.operar());
+        assertEquals(8, this.exp4.operar());
     }
 
     @Test
     public void testDivision() {
-        assertEquals(1, exp5.operar());
+        assertEquals(1, this.exp5.operar());
     }
 
     @Test
     public void testCompuesto() {
-        assertEquals(1, exp6.operar());
+        assertEquals(1, this.exp6.operar());
     }
 
     @Test
-    public void testVer() {
-        assertEquals("((3-((4/2)*3))+4)", exp6.ver());
+    public void testToString() {
+        assertEquals("((3-((4/2)*3))+4)", this.exp6.toString());
     }
 }

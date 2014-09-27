@@ -15,7 +15,7 @@ public class Conexion {
         return link;
     }
 
-    public Estado estado() {
+    public Estado getEstado() {
         return this.estado;
     }
 

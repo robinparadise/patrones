@@ -18,6 +18,7 @@ public class TreeNumbersTest {
 
     private TreeNumbers leaf;
 
+    //Se prueban otros valores
     @Before
     public void ini() {
         this.root = new CompositeNode("raiz");
@@ -34,11 +35,8 @@ public class TreeNumbersTest {
         this.sub12 = new CompositeNode("sub12");
         this.sub1.add(sub12);
 
-        this.sub11.add(new LeafNode(2));
-        this.sub11.add(new LeafNode(3));
-
-        this.sub12.add(new LeafNode(5));
-        this.sub12.add(new LeafNode(6));
+        this.sub11.add(new LeafNode(-999999));
+        this.sub11.add(new LeafNode(-3));
     }
 
     @Test
@@ -70,7 +68,7 @@ public class TreeNumbersTest {
 
     @Test
     public void testSumComposite() {
-        assertEquals(28, this.root.sum());
+        assertEquals(-999990, this.root.sum());
     }
 
     @Test
@@ -81,6 +79,7 @@ public class TreeNumbersTest {
     @Test
     public void testHigherComposite() {
         assertEquals(7, this.root.higher());
+        assertEquals(-3, this.sub11.higher());
     }
 
     @Test
