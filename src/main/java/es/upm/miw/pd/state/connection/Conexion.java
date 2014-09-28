@@ -1,4 +1,4 @@
-package es.upm.miw.pd.state.conection;
+package es.upm.miw.pd.state.connection;
 
 public class Conexion {
     private Estado estado;
