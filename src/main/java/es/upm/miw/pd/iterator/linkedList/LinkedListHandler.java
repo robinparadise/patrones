@@ -9,7 +9,7 @@ public class LinkedListHandler {
     }
 
     public int size() {
-        LinkedList node = list;
+        LinkedList node = this.list;
         int count = 1;
         while (!node.isLast()) {
             node = node.getNext();
@@ -19,7 +19,7 @@ public class LinkedListHandler {
     }
     
     public int sum(){
-        LinkedList node = list;
+        LinkedList node = this.list;
         int total= node.getValue();
         while (!node.isLast()) {
             node = node.getNext();
