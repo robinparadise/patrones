@@ -1,4 +1,4 @@
-package es.upm.miw.pd.composite.expresiones.solution;
+package es.upm.miw.pd.composite.expression.solution;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,7 +12,7 @@ import es.upm.miw.pd.composite.expression.solution.Numero;
 import es.upm.miw.pd.composite.expression.solution.Restar;
 import es.upm.miw.pd.composite.expression.solution.Sumar;
 
-public class ExpresionTest {
+public class ExpressionTest {
     private Expresion exp1, exp2, exp3, exp4, exp5, exp6;
 
     @Before
