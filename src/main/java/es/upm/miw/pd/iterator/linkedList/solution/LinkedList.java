@@ -20,7 +20,7 @@ public class LinkedList {
         return this.value;
     }
 
-    public LinkedList getNext() {
+    protected LinkedList getNext() {
         return this.next;
     }
 
