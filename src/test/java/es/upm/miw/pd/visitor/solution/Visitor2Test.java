@@ -1,4 +1,4 @@
-package es.upm.miw.pd.visitor;
+package es.upm.miw.pd.visitor.solution;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,7 +8,11 @@ import java.util.Collection;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Visitador2Test {
+import es.upm.miw.pd.visitor.ElementA;
+import es.upm.miw.pd.visitor.ElementB;
+import es.upm.miw.pd.visitor.element;
+
+public class Visitor2Test {
     private Collection<element> coleccion = new ArrayList<element>();
 
     @Before
