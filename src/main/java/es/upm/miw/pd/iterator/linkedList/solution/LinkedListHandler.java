@@ -3,9 +3,9 @@ package es.upm.miw.pd.iterator.linkedList.solution;
 import java.util.Iterator;
 
 public class LinkedListHandler {
-    public LinkedList list;
+    public Iterable<Integer> list;
 
-    public LinkedListHandler(LinkedList list) {
+    public LinkedListHandler(Iterable<Integer> list) {
         assert list != null;
         this.list = list;
     }

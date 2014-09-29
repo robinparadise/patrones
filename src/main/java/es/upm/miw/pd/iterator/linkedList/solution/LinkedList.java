@@ -2,7 +2,7 @@ package es.upm.miw.pd.iterator.linkedList.solution;
 
 import java.util.Iterator;
 
-public class LinkedList {
+public class LinkedList implements Iterable<Integer>{
     private int value;
 
     private LinkedList next;
@@ -29,7 +29,8 @@ public class LinkedList {
         this.next = node;
     }
     
-    public Iterator<Integer> iterator(){
+    @Override
+    public Iterator<Integer> iterator() {
         return new LinkedListIterator(this);
     }
 }
