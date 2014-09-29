@@ -5,13 +5,13 @@ public final class FlyweightMain {
     }
 
     public static void main(String[] args) {
-        Factory factoria = new Factory();
+        Factory factory = new Factory();
         FlyweightConcrete[] array = new FlyweightConcrete[5];
-        array[0] = factoria.get("ocho");
-        array[1] = factoria.get("tres");
-        array[2] = factoria.get("ocho");
-        array[3] = factoria.get("dos");
-        array[4] = factoria.get("tres");
+        array[0] = factory.get("ocho");
+        array[1] = factory.get("tres");
+        array[2] = factory.get("ocho");
+        array[3] = factory.get("dos");
+        array[4] = factory.get("tres");
 
         for (FlyweightConcrete pesoLigeroConcreto : array) {
             System.out.println(pesoLigeroConcreto.operation("--"));
