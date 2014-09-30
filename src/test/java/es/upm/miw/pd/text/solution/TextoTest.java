@@ -82,7 +82,7 @@ public class TextoTest {
     
     @Test
     public void testTextoMayusculas() {
-        assertEquals("HOLA\nHOLA\n---o---\n",txt.dibujar(true));
+        assertEquals("HOLA\nHOLA\n---o---\n",txt.dibujar(true)); 
     }
     
     @Test
